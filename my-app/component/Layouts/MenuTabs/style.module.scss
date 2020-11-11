@@ -188,10 +188,10 @@
         display: block;
         background-color: aqua;
         animation-name: example;
-        animation-duration: 0.5s;
+        animation-duration: 1s;
     }
     @keyframes example {
-        from {width: 30%;}
-        to {width: 100%;}
+        from {width: 20%; opacity: 0;}
+        to {width: 100%; opacity: 1;}
     }
 }

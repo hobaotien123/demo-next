@@ -7,11 +7,14 @@ import Image from 'next/image';
 const MenuTabs = () => {
     useEffect(() => {
         document.getElementById("defaultClick").click();
+        document.getElementById("defaultClick").classList.add(`${style.active}`)
     },[])
     const onClick = (item) => {
         return (e) => {
             const allTabContentNone = document.getElementsByClassName(`${style.tabContents}`);
             const allItemMenuTabNone = document.getElementsByClassName(`${style.itemMenuTab}`);
+            const activeClick = document.getElementById(`${item.id2}`);
+            console.log(activeClick);
             // console.log("allItemMenuTabNone",allItemMenuTabNone);
             for(let i = 0; i < allTabContentNone.length; i++){
                 allTabContentNone[i].style.display = "none";
@@ -20,7 +23,7 @@ const MenuTabs = () => {
                 allItemMenuTabNone[i].classList.remove(`${style.active}`);
             }
             document.getElementById(`${item.idClick}`).style.display = "block";
-            // document.getElementById(`${item.id}`).classList.add("active");
+            activeClick.classList.add(`${style.active}`);
         };
     }
     const menuTabs = [
@@ -33,16 +36,19 @@ const MenuTabs = () => {
         {
             class : "itemMenuTab",
             idClick : "resume",
+            id2 : "defaultClick2",
             content : "RESUME"
         },
         {
             class : "itemMenuTab",
             idClick : "works",
+            id2 : "defaultClick3",
             content : "WORKS"
         },
         {
             class : "itemMenuTab",
             idClick : "contacts",
+            id2 : "defaultClick4",
             content : "CONTACTS"
         },
     ]
