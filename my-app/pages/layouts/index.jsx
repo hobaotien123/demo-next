@@ -78,6 +78,7 @@ const Layouts = () => {
             <Head>
                 <title>My page title</title>
                 <meta name="description" content="initial-scale=1.0, width=device-width" />
+                <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg" />
             </Head>
             <LayoutComponent />
             {/* <NumberContext.Provider value={{context : state, hoverChange}}>
