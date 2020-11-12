@@ -314,10 +314,33 @@
         animation-duration: 1s;
         background-color: #fff;
         height: 100%;
-        padding: 15px 15px;
+        padding: 15px 30px;
         @media screen and (max-width : 768px) {
             animation-name: example2;
             animation-duration: 1s;
+        }
+        .aboutMe{
+            display: inline-block;
+            font-weight: 500;
+            font-size: 27px;
+            padding: 10px;
+            border-bottom: 1px solid #d0cdcd;
+        }
+        .myContent{
+            padding: 20px 0px;
+            .myName{
+                font-weight: bold;
+                font-size: 18px;
+            }
+            .textContent{
+                font-weight: 400;
+                font-size: 15px;
+                margin: 10px 0px;
+            }
+            .myphilosophy{
+                font-size: 18px;
+                font-weight: bold;
+            }
         }
     }
     @keyframes example {
