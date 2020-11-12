@@ -1,7 +1,7 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import style from "./style.module.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faFlagCheckered, faGifts, faQuoteLeft, faSadTear} from '@fortawesome/free-solid-svg-icons';
+import { faCoffee, faBook, faPencilAlt, faAt, faChild , faFlagCheckered, faGifts, faQuoteLeft, faSadTear} from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import {NumberContext} from "../../Layouts/index"
 
@@ -14,8 +14,10 @@ const MenuTabs = () => {
         document.getElementById("defaultClick").click();
         // document.getElementById("defaultClick").classList.add(`${style.active}`);
         document.getElementById("defaultClick").style.color = `${context.color}`;
+    },[])
+    useEffect(() => {
+        document.getElementsByClassName(`${style.active}`)[0].style.color = `${context.color}`;
     },[context])
-    
     
     const onSkillFocus = (item) => {
         return () => {
@@ -68,25 +70,29 @@ const MenuTabs = () => {
             class : "itemMenuTab",
             id2 : "defaultClick",
             idClick : "about",
-            content : "ABOUT"
+            content : "ABOUT",
+            icon : faChild,
         },
         {
             class : "itemMenuTab",
             idClick : "resume",
             id2 : "defaultClick2",
-            content : "RESUME"
+            content : "RESUME",
+            icon : faBook,
         },
         {
             class : "itemMenuTab",
             idClick : "works",
             id2 : "defaultClick3",
-            content : "WORKS"
+            content : "WORKS",
+            icon : faPencilAlt,
         },
         {
             class : "itemMenuTab",
             idClick : "contacts",
             id2 : "defaultClick4",
-            content : "CONTACTS"
+            content : "CONTACTS",
+            icon : faAt,
         },
     ];
     const skills = [
@@ -130,7 +136,7 @@ const MenuTabs = () => {
                                     onClick={onClick(item)} item={item} 
                                     className={style[item.class]}
                                 >
-                                    <FontAwesomeIcon className={style.iconMenuTab} icon={faCoffee} />
+                                    <FontAwesomeIcon className={style.iconMenuTab} icon={item.icon} />
                                     <h4 
                                         className={style.textItemMenuTab}>
                                         {item.content}
