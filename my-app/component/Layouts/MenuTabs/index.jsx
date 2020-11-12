@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import style from "./style.module.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faBook, faPencilAlt, faAt, faChild , faFlagCheckered, faGifts, faQuoteLeft, faSadTear} from '@fortawesome/free-solid-svg-icons';
+import {  faBook, faPencilAlt, faAt, faChild , faFlagCheckered, faGifts, faQuoteLeft, faSadTear} from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import {NumberContext} from "../../Layouts/index"
 
@@ -110,6 +110,11 @@ const MenuTabs = () => {
             id: 3,
             title : "Angular",
             value : "angular"
+        },
+        {
+            id: 4,
+            title : "HTML CSS",
+            value : "htmlCss"
         }
     ];
     const contacts = [

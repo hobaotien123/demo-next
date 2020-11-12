@@ -22,9 +22,17 @@ const LayoutComponent = () => {
             color : "#b52c2d",
             img : "/angular.367d4f3d.png",
             background: "linear-gradient(to right bottom, rgb(0, 67, 169) 0%, rgb(180, 43, 44) 100%)",
-        }
+        },
+        htmlCss : {
+            value : "htmlCss",
+            color : "#fe560c",
+            img : "/html-css.png",
+            background: "linear-gradient(to right bottom, rgb(254, 86, 13) 5%, rgb(16, 143, 227) 100%)",
+        },
+
     };
     const [state,setState] = useState(contextBackground.react);
+    console.log("state",state);
     const changeContext = () => {
         document.getElementById("hihi").classList.remove(`${style.elementToFadeInAndOut}`);
         setTimeout(() => {
@@ -35,14 +43,20 @@ const LayoutComponent = () => {
                         break;
                     case "javascript":
                         setState(contextBackground.angular);
+                        break;
                     case "angular" :
-                        setState(contextBackground.react)
+                        setState(contextBackground.htmlCss);
+                        break;
+                    case "htmlCss" :
+                    setState(contextBackground.react);
+                    break;
                     default:
                         break;
                 }
         }, 200);
     }
     const hoverChange = (item) => {
+        console.log("item",item);
         document.getElementById("hihi").classList.remove(`${style.elementToFadeInAndOut}`);
         setTimeout(() => {
         document.getElementById("hihi").classList.add(`${style.elementToFadeInAndOut}`);
@@ -57,6 +71,9 @@ const LayoutComponent = () => {
             case "angular":
                 setState(contextBackground.angular);
                 break;
+            case "htmlCss":
+                setState(contextBackground.htmlCss);
+                break;
             default:
                 break;
         }
@@ -65,7 +82,7 @@ const LayoutComponent = () => {
     useEffect(() => {
         const clearChange = setInterval(() => {
             changeContext()
-        },5000);
+        },50000);
         return () => {
             clearInterval(clearChange);
         }

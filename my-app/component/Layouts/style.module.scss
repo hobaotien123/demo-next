@@ -9,6 +9,12 @@
     transform: translate(-50%, -50%);
     // background-color: #fff;
     margin: 0vh 0px;
+    @media screen and (max-width : 1000px) {
+            display: block;
+            height: auto;
+            max-height: 95%;
+            max-width: 90%;
+    }
 }
 .bgAll{
     transition: 2s all linear;
