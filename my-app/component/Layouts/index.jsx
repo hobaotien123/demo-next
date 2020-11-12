@@ -82,7 +82,7 @@ const LayoutComponent = () => {
     useEffect(() => {
         const clearChange = setInterval(() => {
             changeContext()
-        },50000);
+        },5000);
         return () => {
             clearInterval(clearChange);
         }
