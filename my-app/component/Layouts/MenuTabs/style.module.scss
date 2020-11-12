@@ -111,22 +111,27 @@
             // }
             .avatarDefault{
                 border-radius: 50%;
-                width: 120px;
-                height: 120px;
+                width: 140px;
+                height: 140px;
                 margin: 0px auto;
-                transform: translateY(-50%);
+                transform: translateY(-70%);
                 z-index: 999;
                 @media screen and (max-width : 1000px) {
-                    width: 80px;
-                    height: 80px;
+                    // width: 80px;
+                    // height: 80px;
                 }
                 @media screen and (max-width : 768px) {
-                    width: 70px;
-                    height: 70px;
+                    // width: 70px;
+                    // height: 70px;
                 }
                 @media screen and (max-width : 500px) {
-                    width: 60px;
-                    height: 60px;
+                    width: 120px;
+                    height: 120px;
+                }
+                img{
+                    border-radius: 50%;
+                    max-width: 100%;
+                    max-height: 100%;
                 }
 //     animation: fade 0.5s linear;
 // }
@@ -154,6 +159,7 @@
             }
             .userName{
                 font-size: 30px;
+                font-weight: 600;
                 // margin: 0px auto;
                 @media screen and ( max-width : 768px){
                     font-size: 25px;
@@ -173,12 +179,13 @@
                 // margin: 0 auto; /* Gives that scrolling effect as the typing happens */
                 letter-spacing: .1em; /* Adjust as needed */
                 animation: 
-                    typing 3.5s steps(40, end) infinite,
+                    typing 4.5s steps(40, end) infinite,
                     blink-caret .75s step-end infinite;
             }
             @keyframes typing {
-                from { width: 0 }
-                to { width: 100% }
+                0% { width: 0 }
+                70% { width: 100% }
+                100% { width: 100%}
               }
               
               /* The typewriter cursor effect */
@@ -325,17 +332,33 @@
             font-size: 27px;
             padding: 10px;
             border-bottom: 1px solid #d0cdcd;
+            transition: 0.3s;
         }
         .myContent{
             padding: 20px 0px;
             .myName{
                 font-weight: bold;
-                font-size: 18px;
+                font-size: 22px;
+                text-transform: lowercase;
+                margin-bottom: 20px;
             }
-            .textContent{
-                font-weight: 400;
-                font-size: 15px;
-                margin: 10px 0px;
+            .allTextContent{
+                display: flex;
+                align-items: center;
+                margin: 15px 0px;
+                .textMyContent{
+                    font-size: 14px;
+                    font-weight: bold;
+                    transition: 0.3s;
+                }
+                .textContent{
+                    font-weight: 500;
+                    font-size: 16px;
+                    display: inline-block;
+                }
+                #fpt{
+
+                }
             }
             .myphilosophy{
                 font-size: 18px;

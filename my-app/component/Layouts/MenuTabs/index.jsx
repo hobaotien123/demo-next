@@ -161,16 +161,14 @@ const MenuTabs = () => {
                             // height={220}
                         />
                         <div className={style.avatarDefault}>
-                            <Image className={style.imgAvatar}
-                                src="/default-avatar.png"
+                            <img className={style.imgAvatar}
+                                src="/baotien.jpg"
                                 alt="Picture of the author"
-                                width={100}
-                                height={100}
                             />
                         </div>
                     </div>
                     <div className={style.profileContent}>
-                        <h4 className={style.userName}>Emre Baskan</h4>
+                        <h4 className={style.userName}>Bao Tien</h4>
                         <div>
                             <p className={style.position} style={{ transition : "1s", color : `${context.color}`}}>Intern Javascript Developer</p>
                         </div>
@@ -187,7 +185,7 @@ const MenuTabs = () => {
                                 <h6 className={style.textLocation} >Location :</h6>
                             </div>
                             <div className={style.contentLocation}>
-                                KYIV / ISTANBUL
+                                HCMC / VN
                             </div>
                         </section>
                     </div>
@@ -227,26 +225,70 @@ const MenuTabs = () => {
                 </div>
                 <div className={style.rightContent}>
                     <div id="about" className={style.tabContents}>
-                        <div className={style.aboutMe}>
+                        <div className={style.aboutMe} style={{ color : `${context.color}`, borderBottomColor : `${context.color}`}}>
                             ABOUT ME
                         </div>
                         <div className={style.myContent}>
-                            <h5 className={style.myName}>Hi, I am Emre Baskan</h5>
-                            <p className={style.textContent}>Self-taught, self-driven, passionate learner and developer focusing on Angular, React, Vue, Node, and Java Technologies. Looking forward to working with ingenious teams on challenging projects.</p>
-                            <p className={style.textContent}>Self-taught, self-driven, passionate learner and developer focusing on Angular, React, Vue, Node, and Java Technologies. Looking forward to working with ingenious teams on challenging projects.</p>
-                            <p className={style.textContent}>Self-taught, self-driven, passionate learner and developer focusing on Angular, React, Vue, Node, and Java Technologies. Looking forward to working with ingenious teams on challenging projects.</p>
-                            <h5 className={style.myphilosophy}>My philosophy of programming</h5>
-                            <p className={style.textContent}>I have a deep understanding of how JavaScript works. I strongly believe that having a solid understanding of core technologies allows developers to master at any frameworks.</p>
+                            <h5 className={style.myName}>" Hi, I am Ho Bao Tien "</h5>
+                            <div className={style.allTextContent}>
+                                <span className={style.textMyContent}>Date of birth: &nbsp;  </span>
+                                <p className={style.textContent}> 14/10/1999 </p>
+                            </div>
+                            <div className={style.allTextContent}>
+                                <span className={style.textMyContent}>Gender: &nbsp;  </span>
+                                <p className={style.textContent}>Male </p>
+                            </div>
+                            <div className={style.allTextContent}>
+                                <span className={style.textMyContent}>Address: &nbsp;  </span>
+                                <p className={style.textContent}>60 C1 Street, Tân Bình District, HCMC </p>
+                            </div>
+                            <div className={style.allTextContent}>
+                                <span className={style.textMyContent}>Education & Qualifications: &nbsp;  </span>
+                                <p id="fpt" className={style.textContent}>FPT POLYTECHNIC</p>
+                            </div>
                         </div>
                     </div>
                     <div id="resume" className={style.tabContents}>
-                        <h1>RESUME</h1>
+                    <div className={style.aboutMe} style={{ color : `${context.color}`, borderBottomColor : `${context.color}`}}>
+                            RESUME
+                        </div>
+                        <div className={style.myContent}>
+                            <h5 className={style.myName}>Hi, I am Ho Bao Tien</h5>
+                            <div className={style.allTextContent}>
+                                <span className={style.textMyContent}>Date of birth:  </span>
+                                <p className={style.textContent}> 14/10/1999 </p>
+                            </div>
+                            <div className={style.allTextContent}>
+                                <span className={style.textMyContent}>Gender:  </span>
+                                <p className={style.textContent}>Male </p>
+                            </div>
+                            <div className={style.allTextContent}>
+                                <span className={style.textMyContent}>Address:  </span>
+                                <p className={style.textContent}>60 C1 Street, Tân Bình District, HCMC </p>
+                            </div>
+                        </div>
                     </div>
                     <div id="works" className={style.tabContents}>
                         <h1>WORKS</h1>
                     </div>
                     <div id="contacts" className={style.tabContents}>
-                        <h1>CONTACTS</h1>
+                    <div className={style.aboutMe} style={{ color : `${context.color}`, borderBottomColor : `${context.color}`}}>
+                            ABOUT ME
+                        </div>
+                        <div className={style.myContent}>
+                            <div className={style.allTextContent}>
+                                <span className={style.textMyContent}>Phone:  </span>
+                                <p className={style.textContent}> 0586176527 </p>
+                            </div>
+                            <div className={style.allTextContent}>
+                                <span className={style.textMyContent}>Email:  </span>
+                                <p className={style.textContent}>hobaotien123@gmail.com</p>
+                            </div>
+                            <div className={style.allTextContent}>
+                                <span className={style.textMyContent}>Facebook:  </span>
+                                <p className={style.textContent}>https://www.facebook.com/hobaotien141099 </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
