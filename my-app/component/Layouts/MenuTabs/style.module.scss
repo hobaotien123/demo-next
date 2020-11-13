@@ -355,8 +355,8 @@
                 margin-bottom: 20px;
             }
             .allTextContent{
-                display: flex;
-                align-items: center;
+                display: grid;
+                grid-template-columns: 20% 70%;
                 margin: 15px 0px;
                 .textMyContent{
                     font-size: 14px;
