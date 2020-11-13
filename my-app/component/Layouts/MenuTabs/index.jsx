@@ -325,13 +325,17 @@ const MenuTabs = () => {
                         </div>
                         <div className={style.myContent}>
                             <div className={style.allTextContent}>
-                                <FontAwesomeIcon style={{marginRight : "5px"}} icon={faPhone} />
-                                <span className={style.textMyContent}>Phone: &nbsp;  </span>
+                                <div>
+                                    <FontAwesomeIcon style={{marginRight : "5px"}} icon={faPhone} />
+                                    <span className={style.textMyContent}>Phone: &nbsp;  </span>
+                                </div>
                                 <p className={style.textContent}> 0586176527 </p>
                             </div>
                             <div className={style.allTextContent}>
-                                <FontAwesomeIcon style={{marginRight : "5px"}} icon={faAt} />
-                                <span className={style.textMyContent}>Email: &nbsp;  </span>
+                                <div>
+                                    <FontAwesomeIcon style={{marginRight : "5px"}} icon={faAt} />
+                                    <span className={style.textMyContent}>Email: &nbsp;  </span>
+                                </div>
                                 <p className={style.textContent}>hobaotien123@gmai.com </p>
                             </div>
                         </div>
