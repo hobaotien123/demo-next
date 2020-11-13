@@ -77,7 +77,7 @@ const Layouts = () => {
     return(
         <>
             <Head>
-                <title>My page title</title>
+                <title>My Portfolio</title>
                 <meta name="description" content="initial-scale=1.0, width=device-width" />
                 <meta property="og:image" content="/default-avatar.png" />
             </Head>
