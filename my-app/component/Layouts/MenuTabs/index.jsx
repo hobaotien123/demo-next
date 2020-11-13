@@ -210,10 +210,10 @@ const MenuTabs = () => {
                                     onMouseOver={onMouseOverContact(item)}
                                     onMouseOut={onMouseOutContact(item)}
                                     key={item.id} item={item} id={`${item.id}`} className={`${style[item.class]}`}>
-                                        <p className={style.downloadElement}
+                                        <a target="_blank" href="https://drive.google.com/file/d/13GD6pSCickI_mGXGKpofwpkIXqDdFwfy/view?usp=sharing" className={style.downloadElement}
                                         >
                                             {item.title}
-                                        </p>
+                                        </a>
                                     </div>
                                 );
                             })

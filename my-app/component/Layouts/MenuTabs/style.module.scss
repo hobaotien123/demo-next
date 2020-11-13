@@ -277,9 +277,11 @@
                 justify-content: center;
                 padding: 20px 0px;
                 font-weight: bold;
-                cursor: pointer;
+                // cursor: pointer;
                 .downloadElement{
                     transition: 0.3s;
+                    text-decoration: none;
+                    color: #323232;
                 }
                 @media screen and (max-width : 1000px) {
                     padding: 7px 0px;
