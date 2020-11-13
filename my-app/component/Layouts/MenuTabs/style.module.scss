@@ -313,6 +313,9 @@
         }
         @media screen and (max-width : 768px) {
             min-height: 600px;
+            position: relative;
+            height: 100%;
+            overflow-y: hidden;
         }
     }
     .tabContents{
@@ -336,6 +339,13 @@
         }
         .myContent{
             padding: 20px 0px;
+            position: relative;
+            .year{
+                position: absolute;
+                right: 2%;
+                top: 8%;
+                font-size: 12px;
+            }
             .myName{
                 font-weight: bold;
                 font-size: 22px;
@@ -350,19 +360,54 @@
                     font-size: 14px;
                     font-weight: bold;
                     transition: 0.3s;
+                    @media screen and (max-width : 768px ){
+                        font-size: 10px;
+                    }
                 }
                 .textContent{
                     font-weight: 500;
                     font-size: 16px;
                     display: inline-block;
-                }
-                #fpt{
-
+                    @media screen and (max-width : 768px ){
+                        font-size: 12px;
+                    }
                 }
             }
             .myphilosophy{
                 font-size: 18px;
                 font-weight: bold;
+            }
+        }
+        .allMyWorks{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap : 30px;
+            height: auto;
+            .myWork{
+                overflow: hidden;
+                max-width: 100%;
+                .imgWork{
+                    width: 100%;
+                    height: 200px;
+                    max-width: 100%;
+                    object-fit: cover;
+                }
+                .contentWork{
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .titleWork{
+                        font-size: 15px;
+                    }
+                    .linkWork{
+                        margin-top: 8px;
+                        font-size: 8px;
+                        color: gray;
+                    }
+                }
             }
         }
     }

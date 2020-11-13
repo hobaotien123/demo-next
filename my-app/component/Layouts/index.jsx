@@ -32,7 +32,6 @@ const LayoutComponent = () => {
 
     };
     const [state,setState] = useState(contextBackground.react);
-    console.log("state",state);
     const changeContext = () => {
         document.getElementById("hihi").classList.remove(`${style.elementToFadeInAndOut}`);
         setTimeout(() => {

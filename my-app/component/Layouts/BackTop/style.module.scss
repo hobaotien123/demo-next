@@ -1,0 +1,32 @@
+.backTop{
+    display: none;
+    @media screen and (max-width : 768px) {
+        display: flex;
+        position: fixed;
+        bottom: 5%;
+        right: 10%;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2px;
+    }
+}
+.fadeIn{
+    background-color: #000;
+    animation: fade 0.5s linear;
+}
+@keyframes fade {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+.fadeOut{
+    display: none;
+    background-color: black;
+    opacity: 0;
+    animation: fade2 0.5s linear;
+}
+@keyframes fade2 {
+  0% { opacity: 1 }
+  100% { opacity: 0 }
+}

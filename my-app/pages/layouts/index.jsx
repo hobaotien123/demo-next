@@ -3,9 +3,10 @@ import React, { useEffect, useState }  from "react";
 import style from "./style.module.scss";
 import Head from 'next/head';
 import LayoutComponent from "../../component/Layouts";
+import BackTop from "../../component/Layouts/BackTop";
 // import TabContents from "../../component/Layouts/TabContents";
 
-export const NumberContext = React.createContext();
+// export const NumberContext = React.createContext();
 const Layouts = () => {
     // const contextBackground = {
     //     react: {
@@ -81,13 +82,8 @@ const Layouts = () => {
                 <meta property="og:image" content="/default-avatar.png" />
             </Head>
             <LayoutComponent />
-            {/* <NumberContext.Provider value={{context : state, hoverChange}}>
-                    <div id="hihi" className={style.bgAll} style={{ background : state.background}}>
-                    </div>
-                    <div className={style.all}>
-                        <MenuTabs />
-                    </div>
-            </NumberContext.Provider> */}
+            <BackTop />
+            {/* <BackTop /> */}
         </>
     );
 }

@@ -1,13 +1,13 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import style from "./style.module.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faBook, faPencilAlt, faAt, faChild , faFlagCheckered, faGifts, faQuoteLeft, faSadTear} from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faBook, faPencilAlt, faAt, faChild , faFlagCheckered, faGifts, faQuoteLeft, faSadTear} from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import {NumberContext} from "../../Layouts/index"
 
 const MenuTabs = () => {
     const {context , hoverChange} = useContext(NumberContext);
-    // console.log("context",context);
+    console.log("context",context);
     useEffect(() => {
         // const setCssActive = document.getElementsByClassName(`${style.active}`);
         // setCssActive[0].style.color = `${context.color}`;
@@ -162,7 +162,7 @@ const MenuTabs = () => {
                         />
                         <div className={style.avatarDefault}>
                             <img className={style.imgAvatar}
-                                src="/baotien.jpg"
+                                src="/baotienCV.jpg"
                                 alt="Picture of the author"
                             />
                         </div>
@@ -170,7 +170,7 @@ const MenuTabs = () => {
                     <div className={style.profileContent}>
                         <h4 className={style.userName}>Bao Tien</h4>
                         <div>
-                            <p className={style.position} style={{ transition : "1s", color : `${context.color}`}}>Intern Javascript Developer</p>
+                            <p className={style.position} style={{ transition : "1s", color : `${context.color}`}}>Intern Javascript</p>
                         </div>
                         <div className={style.logoProfile}>
                             {/* <i class="fab fa-github"></i> */}
@@ -243,8 +243,8 @@ const MenuTabs = () => {
                                 <p className={style.textContent}>60 C1 Street, Tân Bình District, HCMC </p>
                             </div>
                             <div className={style.allTextContent}>
-                                <span className={style.textMyContent}>Education & Qualifications: &nbsp;  </span>
-                                <p id="fpt" className={style.textContent}>FPT POLYTECHNIC</p>
+                                <span className={style.textMyContent}>Carrer Goal: &nbsp;  </span>
+                                <p id="fpt" className={style.textContent}>I would like to become the Front-end developer with my skills and myexperiences in organization and communication.</p>
                             </div>
                         </div>
                     </div>
@@ -253,40 +253,86 @@ const MenuTabs = () => {
                             RESUME
                         </div>
                         <div className={style.myContent}>
-                            <h5 className={style.myName}>Hi, I am Ho Bao Tien</h5>
                             <div className={style.allTextContent}>
-                                <span className={style.textMyContent}>Date of birth:  </span>
-                                <p className={style.textContent}> 14/10/1999 </p>
+                                <span className={style.textMyContent}>Education & Qualifications: &nbsp;  </span>
+                                <p className={style.textContent}> FPT POLYTECHNIC </p>
+                                {/* <p className={style.textContent}> Specialized : &nbsp; Information Technology </p> */}
                             </div>
                             <div className={style.allTextContent}>
-                                <span className={style.textMyContent}>Gender:  </span>
-                                <p className={style.textContent}>Male </p>
+                                <span className={style.textMyContent}>Specialized : &nbsp;  </span>
+                                <p className={style.textContent}>Information Technology </p>
                             </div>
                             <div className={style.allTextContent}>
-                                <span className={style.textMyContent}>Address:  </span>
-                                <p className={style.textContent}>60 C1 Street, Tân Bình District, HCMC </p>
+                                <span className={style.textMyContent}>To graduate : &nbsp;  </span>
+                                <p className={style.textContent}>Good </p>
+                            </div>
+                            <div className={style.year}>
+                                2017-2020
+                            </div>
+                        </div>
+                        <div className={style.myContent}>
+                            <div className={style.allTextContent}>
+                                <span className={style.textMyContent}>Certificate:&nbsp; </span>
+                                <p className={style.textContent}> WEB DEVELOPER FRONT END - VNUHCM-University Of Science InformationTechnology </p>
+                            </div>
+                            <div className={style.year}>
+                                2019
                             </div>
                         </div>
                     </div>
                     <div id="works" className={style.tabContents}>
-                        <h1>WORKS</h1>
+                        <div className={style.aboutMe} style={{ color : `${context.color}`, borderBottomColor : `${context.color}`}}>
+                            WORKS
+                        </div>
+                        <div className={style.allMyWorks}>
+                            <div className={style.myWork}>
+                                <img className={style.imgWork} src="/reactCV2.png" alt="reactCV">
+                                </img>
+                                <div className={style.contentWork}>
+                                    <h6 className={style.titleWork}>
+                                        Portfolio
+                                    </h6>
+                                    <a target="_blank" href="https://my-templates.vercel.app/?fbclid=IwAR1oh80R5bAtpdL28K2c_CMjbG0LhXJa9Rmc6pkkFKDy_qF3GmJtzpWLF6M" className={style.linkWork}>my-templates.vercel.app</a>
+                                    {/* <a ></a> */}
+                                </div>
+                            </div>
+                            <div className={style.myWork}>
+                                <img className={style.imgWork} src="/storecake.png" alt="storeCake">
+                                </img>
+                                <div className={style.contentWork}>
+                                    <h6 className={style.titleWork}>
+                                        Store Cakes
+                                    </h6>
+                                    <a target="_blank" href="http://HOBAOTIENFE.000WEBHOSTAPP.COM" className={style.linkWork}>hobaotienfe.000webhostapp.com</a>
+                                    {/* <a ></a> */}
+                                </div>
+                            </div>
+                            <div className={style.myWork}>
+                                <img className={style.imgWork} src="/khangmy.png" alt="khangmy">
+                                </img>
+                                <div className={style.contentWork}>
+                                    <h6 className={style.titleWork}>
+                                        Khang My
+                                    </h6>
+                                    <a target="_blank" href="http://HOBAOTIENFE123.000WEBHOSTAPP.COM" className={style.linkWork}>hobaotienfe123.000webhostapp.com</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div id="contacts" className={style.tabContents}>
-                    <div className={style.aboutMe} style={{ color : `${context.color}`, borderBottomColor : `${context.color}`}}>
-                            ABOUT ME
+                        <div className={style.aboutMe} style={{ color : `${context.color}`, borderBottomColor : `${context.color}`}}>
+                            CONTACTS
                         </div>
                         <div className={style.myContent}>
                             <div className={style.allTextContent}>
-                                <span className={style.textMyContent}>Phone:  </span>
+                                <FontAwesomeIcon style={{marginRight : "5px"}} icon={faPhone} />
+                                <span className={style.textMyContent}>Phone: &nbsp;  </span>
                                 <p className={style.textContent}> 0586176527 </p>
                             </div>
                             <div className={style.allTextContent}>
-                                <span className={style.textMyContent}>Email:  </span>
-                                <p className={style.textContent}>hobaotien123@gmail.com</p>
-                            </div>
-                            <div className={style.allTextContent}>
-                                <span className={style.textMyContent}>Facebook:  </span>
-                                <p className={style.textContent}>https://www.facebook.com/hobaotien141099 </p>
+                                <FontAwesomeIcon style={{marginRight : "5px"}} icon={faAt} />
+                                <span className={style.textMyContent}>Email: &nbsp;  </span>
+                                <p className={style.textContent}>hobaotien123@gmai.com </p>
                             </div>
                         </div>
                     </div>
