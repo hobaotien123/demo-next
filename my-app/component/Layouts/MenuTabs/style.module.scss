@@ -339,6 +339,9 @@
             padding: 10px;
             border-bottom: 1px solid #d0cdcd;
             transition: 0.3s;
+            @media screen and (max-width : 768px ){
+                font-size: 20px;
+            }
         }
         .myContent{
             padding: 20px 0px;
@@ -357,12 +360,19 @@
             }
             .allTextContent{
                 display: grid;
-                grid-template-columns: 20% 70%;
+                grid-template-columns: 20% 80%;
                 margin: 15px 0px;
+                @media screen and (max-width : 1000px){
+                    grid-template-columns: 25% 75%;
+                }
+                @media screen and (max-width : 420px){
+                    grid-template-columns: 30% 70%;
+                }
                 .textMyContent{
                     font-size: 14px;
                     font-weight: bold;
                     transition: 0.3s;
+                    text-align: right;
                     @media screen and (max-width : 768px ){
                         font-size: 10px;
                     }
@@ -371,6 +381,10 @@
                     font-weight: 500;
                     font-size: 16px;
                     display: inline-block;
+                    margin-left: 5px;
+                    // @media screen and (max-width : 1000px ){
+                    //     margin-left: 10px;
+                    // }
                     @media screen and (max-width : 768px ){
                         font-size: 12px;
                     }

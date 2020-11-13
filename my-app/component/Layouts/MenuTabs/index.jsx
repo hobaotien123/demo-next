@@ -254,16 +254,16 @@ const MenuTabs = () => {
                         </div>
                         <div className={style.myContent}>
                             <div className={style.allTextContent}>
-                                <span className={style.textMyContent}>Education & Qualifications: &nbsp;  </span>
+                                <span className={style.textMyContent}>Education: &nbsp;  </span>
                                 <p className={style.textContent}> FPT POLYTECHNIC </p>
                                 {/* <p className={style.textContent}> Specialized : &nbsp; Information Technology </p> */}
                             </div>
                             <div className={style.allTextContent}>
-                                <span className={style.textMyContent}>Specialized : &nbsp;  </span>
+                                <span className={style.textMyContent}>Specialized: &nbsp;  </span>
                                 <p className={style.textContent}>Information Technology </p>
                             </div>
                             <div className={style.allTextContent}>
-                                <span className={style.textMyContent}>To graduate : &nbsp;  </span>
+                                <span className={style.textMyContent}>To graduate: &nbsp;  </span>
                                 <p className={style.textContent}>Good </p>
                             </div>
                             <div className={style.year}>
@@ -325,17 +325,11 @@ const MenuTabs = () => {
                         </div>
                         <div className={style.myContent}>
                             <div className={style.allTextContent}>
-                                <div>
-                                    <FontAwesomeIcon style={{marginRight : "5px"}} icon={faPhone} />
-                                    <span className={style.textMyContent}>Phone: &nbsp;  </span>
-                                </div>
+                                <span className={style.textMyContent}>My Phone: &nbsp;  </span>
                                 <p className={style.textContent}> 0586176527 </p>
                             </div>
                             <div className={style.allTextContent}>
-                                <div>
-                                    <FontAwesomeIcon style={{marginRight : "5px"}} icon={faAt} />
-                                    <span className={style.textMyContent}>Email: &nbsp;  </span>
-                                </div>
+                                <span className={style.textMyContent}>Email: &nbsp;  </span>
                                 <p className={style.textContent}>hobaotien123@gmai.com </p>
                             </div>
                         </div>
