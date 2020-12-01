@@ -7,7 +7,7 @@ import {NumberContext} from "../../Layouts/index"
 
 const MenuTabs = () => {
     const {context , hoverChange} = useContext(NumberContext);
-    console.log("context",context);
+    // console.log("context",context);
     useEffect(() => {
         // const setCssActive = document.getElementsByClassName(`${style.active}`);
         // setCssActive[0].style.color = `${context.color}`;

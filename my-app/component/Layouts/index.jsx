@@ -55,11 +55,11 @@ const LayoutComponent = () => {
         }, 200);
     }
     const hoverChange = (item) => {
-        console.log("item",item);
+        // console.log("item",item);
         document.getElementById("hihi").classList.remove(`${style.elementToFadeInAndOut}`);
         setTimeout(() => {
         document.getElementById("hihi").classList.add(`${style.elementToFadeInAndOut}`);
-        console.log("item",item.value);
+        // console.log("item",item.value);
         switch (item.value) {
             case "javascript":
                 setState(contextBackground.javascript);
